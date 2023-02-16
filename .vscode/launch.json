@@ -31,7 +31,17 @@
             "request":"launch",
             "program":"${workspaceFolder}\\src\\manage.py",
             "args":[
-                "makemigration"
+                "makemigrations"
+            ],
+            "django":true,
+        },
+        {
+            "name":"Python Django CreateSuperUser",
+            "type":"python",
+            "request":"launch",
+            "program":"${workspaceFolder}\\src\\manage.py",
+            "args":[
+                "createsuperuser"
             ],
             "django":true,
         }
